@@ -1,21 +1,21 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { WinkMark } from "@/components/WinkMark";
 
-const REPO = "https://github.com/myhackingpal/myhackingpal";
-const RELEASES = "https://github.com/myhackingpal/myhackingpal/releases/latest";
+const REPO = "https://github.com/hackingpal/hackingpal";
+const RELEASES = "https://github.com/hackingpal/hackingpal/releases/latest";
 const DL = (asset: string) => `${RELEASES}/download/${asset}`;
-const DOCKER_COMPOSE = "https://raw.githubusercontent.com/myhackingpal/myhackingpal/main/docker-compose.yml";
+const DOCKER_COMPOSE = "https://raw.githubusercontent.com/hackingpal/hackingpal/main/docker-compose.yml";
 
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "MyHackingPal — AI-assisted security workspace" },
+      { title: "HackingPal — AI-assisted security workspace" },
       {
         name: "description",
         content:
           "Engagement-first security testing workspace. 75+ tools, Claude-powered copilot, scoped evidence, auto-drafted reports. macOS, Linux, Docker.",
       },
-      { property: "og:title", content: "MyHackingPal — AI-assisted security workspace" },
+      { property: "og:title", content: "HackingPal — AI-assisted security workspace" },
       {
         property: "og:description",
         content:
@@ -63,16 +63,16 @@ const downloads = [
   {
     platform: "macOS",
     arch: "Apple Silicon",
-    file: "MyHackingPal-macos-arm64.dmg",
-    url: DL("MyHackingPal-macos-arm64.dmg"),
+    file: "HackingPal-macos-arm64.dmg",
+    url: DL("HackingPal-macos-arm64.dmg"),
     cta: "↓ Download .dmg",
     note: "Mount, drag to /Applications. Right-click → Open on first launch.",
   },
   {
     platform: "Linux",
     arch: "x86_64",
-    file: "MyHackingPal-linux-x86_64.AppImage",
-    url: DL("MyHackingPal-linux-x86_64.AppImage"),
+    file: "HackingPal-linux-x86_64.AppImage",
+    url: DL("HackingPal-linux-x86_64.AppImage"),
     cta: "↓ Download .AppImage",
     note: "chmod +x, then run. Per-commit arm64 builds in Actions.",
   },
@@ -107,7 +107,7 @@ function Nav() {
       <div className="mx-auto max-w-7xl px-6 h-14 flex items-center justify-between">
         <a href="#top" className="flex items-center gap-3">
           <WinkMark size={28} variant="light" />
-          <span className="text-sm tracking-[0.2em] font-semibold">MYHACKINGPAL</span>
+          <span className="text-sm tracking-[0.2em] font-semibold">HACKINGPAL</span>
         </a>
         <nav className="hidden md:flex items-center gap-8 text-xs tracking-widest text-muted-foreground uppercase">
           <a href="#flow" className="hover:text-foreground transition">Flow</a>
@@ -386,7 +386,7 @@ function Footer() {
         <div className="flex items-center gap-3">
           <WinkMark size={36} variant="light" />
           <div>
-            <div className="text-sm font-bold tracking-widest">MYHACKINGPAL</div>
+            <div className="text-sm font-bold tracking-widest">HACKINGPAL</div>
             <div className="text-xs text-muted-foreground">AI-assisted security workspace</div>
           </div>
         </div>

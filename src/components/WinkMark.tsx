@@ -15,7 +15,7 @@ export function WinkMark({ size = 48, variant = "light", className }: Props) {
       viewBox="0 0 120 120"
       xmlns="http://www.w3.org/2000/svg"
       className={`transition-all duration-300 hover:scale-110 hover:brightness-125 cursor-pointer ${className ?? ""}`}
-      aria-label="MyHackingPal"
+      aria-label="HackingPal"
     >
       <rect width="120" height="120" rx="24" fill={bg} />
       <text

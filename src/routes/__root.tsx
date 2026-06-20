@@ -77,10 +77,10 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "MyHackingPal — AI-assisted security workspace" },
+      { title: "HackingPal — AI-assisted security workspace" },
       { name: "description", content: "Engagement-first security testing workspace. 75+ tools, Claude copilot, scoped evidence." },
-      { name: "author", content: "MyHackingPal" },
-      { property: "og:title", content: "MyHackingPal" },
+      { name: "author", content: "HackingPal" },
+      { property: "og:title", content: "HackingPal" },
       { property: "og:description", content: "AI-assisted security workspace for authorized engagements." },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary" },
